@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f4ec" />
+    <meta
+      name="description"
+      content="和醍醐一起沿河慢慢骑，记得停下来喝口水。"
+    />
+    <title>醍醐的补水骑行 · 好风景慢慢看</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="wordmark" href="#top" aria-label="醍醐骑行俱乐部首页">
+          <span class="wordmark-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32">
+              <path d="M5 21.5 11.7 9l4.4 8.1 3.2-5.2L27 21.5H5Z" />
+              <circle cx="23.4" cy="8.5" r="2.5" />
+            </svg>
+          </span>
+          <span class="wordmark-copy">
+            <strong>慢慢骑俱乐部</strong>
+            <small>THE SLOW RIDE CLUB</small>
+          </span>
+        </a>
+
+        <div class="topbar-note">
+          <span class="live-dot" aria-hidden="true"></span>
+          <span>今天适合去河边吹吹风</span>
+        </div>
+
+        <a class="top-link" href="#ride-controls">
+          补水小贴士
+          <span aria-hidden="true">↘</span>
+        </a>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="intro">
+            <p class="eyebrow"><span>RIDE NOTE</span><i></i><span>NO. 01</span></p>
+            <h1 id="hero-title">醍醐的<br /><em>补水骑行</em></h1>
+            <p class="intro-copy">
+              风不急，路很长。<br />
+              骑到喜欢的地方，也别忘了喝口水。
+            </p>
+
+            <div class="route-card">
+              <div class="route-icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40">
+                  <path d="M8 30c4-11 10-18 19-18 4 0 7 2 7 5 0 2-2 4-5 4-4 0-5-3-3-5" />
+                  <circle cx="9" cy="30" r="2.5" />
+                  <circle cx="30" cy="30" r="2.5" />
+                </svg>
+              </div>
+              <div>
+                <span class="route-label">今日路线</span>
+                <strong>沿河走走 <span>·</span> 不赶时间</strong>
+              </div>
+              <span class="route-arrow" aria-hidden="true">↗</span>
+            </div>
+
+            <div class="intro-footnote">
+              <span class="tiny-sun" aria-hidden="true">✳</span>
+              <span>不用赶路，舒服就好。</span>
+            </div>
+          </div>
+
+          <div class="ride-column">
+            <figure class="ride-card">
+              <div class="scene-topline">
+                <span class="scene-kicker"><i></i> A STORY BY THE RIVER</span>
+                <span class="scene-number">RIDE <b>·</b> 01</span>
+              </div>
+
+              <div class="scene-wrap">
+                <svg
+                  id="rideScene"
+                  class="ride-scene"
+                  viewBox="0 0 900 540"
+                  role="img"
+                  aria-labelledby="scene-title scene-description"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title id="scene-title">醍醐骑车经过河边，停下来喝水</title>
+                  <desc id="scene-description">
+                    一位戴着青绿色头盔的骑行者踩着薄荷绿自行车，穿过阳光、云朵和河岸小路。骑行片刻后，他会拿起水壶喝一口，再继续出发。
+                  </desc>
+                  <defs>
+                    <linearGradient id="sky" x1="0" y1="0" x2="0.9" y2="1">
+                      <stop offset="0" stop-color="#d8efdc" />
+                      <stop offset="1" stop-color="#e9f3d8" />
+                    </linearGradient>
+                    <linearGradient id="river" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#a9d9ca" />
+                      <stop offset="1" stop-color="#73b9a5" />
+                    </linearGradient>
+                    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#e7d9bb" />
+                      <stop offset="1" stop-color="#dac7a7" />
+                    </linearGradient>
+                    <pattern id="speckles" width="34" height="34" patternUnits="userSpaceOnUse">
+                      <circle cx="3" cy="5" r="1" fill="#6e9780" opacity=".14" />
+                      <circle cx="22" cy="20" r="1.2" fill="#6e9780" opacity=".1" />
+                    </pattern>
+                  </defs>
+
+                  <rect width="900" height="540" fill="url(#sky)" />
+                  <rect width="900" height="540" fill="url(#speckles)" />
+                  <circle cx="724" cy="117" r="50" fill="#f6c977" opacity=".9" />
+                  <circle cx="724" cy="117" r="66" fill="#f6c977" opacity=".12" />
+
+                  <g class="cloud cloud-one" fill="#fffdf1" opacity=".88">
+                    <ellipse cx="201" cy="126" rx="60" ry="20" />
+                    <circle cx="174" cy="116" r="24" />
+                    <circle cx="210" cy="103" r="31" />
+                    <circle cx="239" cy="119" r="21" />
+                  </g>
+                  <g class="cloud cloud-two" fill="#fffdf1" opacity=".72">
+                    <ellipse cx="609" cy="188" rx="43" ry="14" />
+                    <circle cx="592" cy="180" r="18" />
+                    <circle cx="617" cy="171" r="22" />
+                    <circle cx="638" cy="184" r="15" />
+                  </g>
+
+                  <path d="M0 302c104-81 190-82 286-24 81-85 182-99 282-28 112-66 223-25 332 20v177H0Z" fill="#b0cf9c" />
+                  <path d="M0 330c127-43 209-41 319 7 105-54 216-46 314 11 92-39 172-31 267 3v143H0Z" fill="#83b889" />
+                  <path d="M0 342c115 21 190 18 280-10 108-34 182-30 276 5 105 39 204 42 344 16v187H0Z" fill="url(#river)" />
+                  <path d="M0 374c105 21 175 16 272-11 101-28 194-23 295 12 113 39 203 40 333 19" fill="none" stroke="#d7eee0" stroke-width="5" stroke-linecap="round" opacity=".7" />
+                  <path d="M0 396c121 24 195 17 286-8 104-28 182-20 287 13 107 33 208 37 327 14" fill="none" stroke="#bce3d1" stroke-width="3" stroke-linecap="round" opacity=".8" />
+
+                  <g class="scenery-glide">
+                    <path d="M0 343c172-30 302-19 450 19 152 39 303 42 450 6v172H0Z" fill="#729d66" opacity=".55" />
+                    <g fill="#658f62">
+                      <path d="M110 363c-16-41-8-69 4-96 11 30 19 57 4 96Zm20 7c5-37 21-59 40-78-3 35-9 62-32 82Zm-42 3c-19-31-22-58-19-84 20 27 34 51 29 83Z" />
+                      <path d="M742 375c-8-48 5-79 23-108 7 38 9 69-10 109Zm22 9c14-39 37-62 62-81-12 40-26 68-55 86Zm-52 0c-21-36-24-66-19-96 24 31 40 58 34 95Z" />
+                    </g>
+                  </g>
+
+                  <path d="M0 438c166-45 325-39 465-3 152 39 283 37 435-8v113H0Z" fill="url(#road)" />
+                  <path class="road-markings" d="M0 454c160-38 303-34 454 3 158 39 292 37 446-4" fill="none" stroke="#fff4d6" stroke-width="4" stroke-dasharray="20 18" opacity=".72" />
+                  <path d="M0 432c160-38 303-34 454 3 158 39 292 37 446-4" fill="none" stroke="#bba986" stroke-width="2" opacity=".6" />
+                  <ellipse cx="446" cy="434" rx="194" ry="31" fill="#557c5a" opacity=".14" />
+
+                  <g class="daisy daisy-one" aria-hidden="true" transform="translate(128 420)">
+                    <path d="M0 12v30" stroke="#547d55" stroke-width="3" />
+                    <g fill="#fffdf1">
+                      <ellipse cy="0" rx="4" ry="8" /><ellipse cy="0" rx="4" ry="8" transform="rotate(60)" /><ellipse cy="0" rx="4" ry="8" transform="rotate(120)" />
+                    </g><circle r="3" fill="#efae50" />
+                  </g>
+                  <g class="daisy daisy-two" aria-hidden="true" transform="translate(774 413) scale(.72)">
+                    <path d="M0 12v30" stroke="#547d55" stroke-width="3" />
+                    <g fill="#fffdf1">
+                      <ellipse cy="0" rx="4" ry="8" /><ellipse cy="0" rx="4" ry="8" transform="rotate(60)" /><ellipse cy="0" rx="4" ry="8" transform="rotate(120)" />
+                    </g><circle r="3" fill="#efae50" />
+                  </g>
+
+                  <g class="bike" stroke-linecap="round" stroke-linejoin="round">
+                    <g class="wheel rear-wheel" transform="translate(300 414)">
+                      <circle r="82" fill="#fff8e8" stroke="#2d5147" stroke-width="7" />
+                      <circle r="72" fill="none" stroke="#93aa83" stroke-width="2" />
+                      <g class="spokes" stroke="#8aa18a" stroke-width="2">
+                        <path d="M0-72V72M-72 0H72M-51-51 51 51M51-51-51 51" />
+                      </g>
+                      <circle r="7" fill="#d58e48" stroke="#fff8e8" stroke-width="3" />
+                    </g>
+                    <g class="wheel front-wheel" transform="translate(570 414)">
+                      <circle r="82" fill="#fff8e8" stroke="#2d5147" stroke-width="7" />
+                      <circle r="72" fill="none" stroke="#93aa83" stroke-width="2" />
+                      <g class="spokes" stroke="#8aa18a" stroke-width="2">
+                        <path d="M0-72V72M-72 0H72M-51-51 51 51M51-51-51 51" />
+                      </g>
+                      <circle r="7" fill="#d58e48" stroke="#fff8e8" stroke-width="3" />
+                    </g>
+
+                    <g fill="none" stroke="#2d6252" stroke-width="9">
+                      <path d="m300 414 115 0-31-104-84 104m84-104 96 9 90 95m-90-95 16-11 18 1m-130 1-14-2" />
+                      <path d="m480 319 5-21 34-1m-35 1-18-2" stroke-width="7" />
+                      <path d="m391 306-19-2m16-3-18 1" stroke-width="8" />
+                    </g>
+                    <g fill="none" stroke="#476e5c" stroke-width="4">
+                      <path d="m506 298 16-12 16 2" />
+                      <path d="m292 414 14 0m257 0 14 0" />
+                    </g>
+                    <g class="pedal-crank" transform="translate(415 414)">
+                      <circle r="9" fill="#d58e48" stroke="#fff3d6" stroke-width="3" />
+                      <path d="M0 0 20 0m0 0 0 19m0-19-20 0m0 0v-19" fill="none" stroke="#374c40" stroke-width="5" />
+                    </g>
+
+                    <g class="character">
+                      <path class="backpack" d="M377 224q-20 3-24 28l7 40 30 0 4-48q-2-17-17-20Z" fill="#e6a765" stroke="#a96845" stroke-width="4" />
+                      <path class="leg leg-back" d="M396 294q18 27 19 60l-33 36-18-11 28-38-18-29Z" fill="#4b5f4c" stroke="#293e36" stroke-width="5" />
+                      <path class="sock" d="m381 376 18 10-15 15-19-11Z" fill="#fff5df" stroke="#293e36" stroke-width="4" />
+                      <path class="shoe" d="m366 387-14 16q-3 7 7 9l29-8 3-10-12-8Z" fill="#d76f54" stroke="#293e36" stroke-width="4" />
+
+                      <path class="leg leg-front" d="M408 294q-4 29 11 53l-10 28 20 9 18-36-9-42Z" fill="#52694f" stroke="#293e36" stroke-width="5" />
+                      <path class="sock" d="m414 369 20 6-4 19-20-6Z" fill="#fff5df" stroke="#293e36" stroke-width="4" />
+                      <path class="shoe" d="m410 388-19 8q-7 5 0 11l30 4 8-9-8-12Z" fill="#d76f54" stroke="#293e36" stroke-width="4" />
+
+                      <path class="jacket" d="M400 227q18-16 39-6l22 34-23 47-52-5 8-43Z" fill="#e87555" stroke="#a94f3d" stroke-width="5" />
+                      <path d="m422 229 7 20 17-16" fill="none" stroke="#ffd2a5" stroke-width="5" />
+                      <path d="m403 243-24 25 15 13 23-22" fill="#f08b66" stroke="#a94f3d" stroke-width="5" />
+                      <path d="m394 275 20 2" stroke="#f4c879" stroke-width="4" />
+
+                      <g class="handle-arm">
+                        <path d="M432 237q21 3 38 18l28 28" fill="none" stroke="#e87555" stroke-width="15" />
+                        <path d="M432 237q21 3 38 18l28 28" fill="none" stroke="#a94f3d" stroke-width="3" />
+                        <circle cx="499" cy="284" r="9" fill="#ebaf84" stroke="#9c5b43" stroke-width="3" />
+                      </g>
+
+                      <g class="sip-arm">
+                        <path d="M415 237q19 5 26 25l-5 14" fill="none" stroke="#e87555" stroke-width="14" />
+                        <path d="M415 237q19 5 26 25l-5 14" fill="none" stroke="#a94f3d" stroke-width="3" />
+                        <circle cx="436" cy="277" r="8" fill="#ebaf84" stroke="#9c5b43" stroke-width="3" />
+                      </g>
+
+                      <g class="head">
+                        <path d="M410 181q3-40 40-40 34 0 38 37l-6 37q-5 25-33 28-29 0-38-27Z" fill="#f0bd91" stroke="#975c48" stroke-width="4" />
+                        <path d="M411 174q0-39 40-44 38 1 42 36-19-3-31-17-17 20-51 25Z" fill="#35584d" stroke="#273f38" stroke-width="5" />
+                        <path d="M421 148q12-22 31-21m-7 5q17 7 29 24" fill="none" stroke="#92b78b" stroke-width="7" stroke-linecap="round" />
+                        <path d="M433 193q4-5 9 0m17 0q4-5 9 0" fill="none" stroke="#493c34" stroke-width="3.5" stroke-linecap="round" />
+                        <path d="M445 208q9 8 18 0" fill="none" stroke="#a5564b" stroke-width="3" stroke-linecap="round" />
+                        <circle cx="426" cy="205" r="5" fill="#e78b79" opacity=".55" />
+                        <circle cx="471" cy="205" r="5" fill="#e78b79" opacity=".55" />
+                        <path class="helmet-strap" d="M418 181q4 39 28 46m24-34q-3 20-15 29" fill="none" stroke="#f3d59e" stroke-width="3" />
+                      </g>
+
+                      <g class="water-bottle" aria-hidden="true">
+                        <path d="M466 328h13v8h5v33q0 7-7 7h-9q-7 0-7-7v-33h5Z" fill="#7bbf9c" stroke="#2d6252" stroke-width="3" />
+                        <path d="M463 346h18" stroke="#e1f3cf" stroke-width="4" />
+                        <path d="M469 324h8v5h-8Z" fill="#f0c873" stroke="#2d6252" stroke-width="2" />
+                      </g>
+                    </g>
+                  </g>
+
+                  <g class="scene-sparkles" fill="#fff8d9" aria-hidden="true">
+                    <path d="M314 159q0 15 14 15-14 1-14 16-1-15-15-16 14 0 15-15Z" />
+                    <path d="M679 246q0 10 9 10-9 1-9 11-1-10-10-11 9 0 10-10Z" />
+                    <circle cx="758" cy="288" r="4" />
+                    <circle cx="191" cy="272" r="3" />
+                  </g>
+                </svg>
+
+                <div class="scene-sticker" aria-hidden="true">
+                  <span>GO</span>
+                  <span>AT YOUR<br />OWN PACE</span>
+                </div>
+              </div>
+
+              <figcaption class="scene-caption">
+                <div class="caption-copy">
+                  <span class="caption-eyebrow">A LITTLE REMINDER</span>
+                  <strong id="rideStatus" aria-live="polite">骑一会儿，记得喝口水。</strong>
+                </div>
+                <div class="caption-weather" aria-label="骑行提示，放松一点">
+                  <span aria-hidden="true">✳</span>
+                  <span>放松一点</span>
+                </div>
+              </figcaption>
+            </figure>
+
+            <div class="ride-controls" id="ride-controls" aria-label="动画控制">
+              <button class="button button-primary" id="waterBreak" type="button">
+                <span class="button-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 3.5S6 10 6 14.5a6 6 0 0 0 12 0C18 10 12 3.5 12 3.5Z" /><path d="M9 15.5a3 3 0 0 0 3 3" /></svg>
+                </span>
+                <span>喝口水</span>
+                <span class="button-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="button button-secondary" id="toggleRide" type="button" aria-pressed="true">
+                <span class="pause-icon" aria-hidden="true"><i></i><i></i></span>
+                <span id="toggleLabel">暂停动画</span>
+              </button>
+              <span class="control-hint"><kbd>SPACE</kbd> 也可以暂停</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="bottom-note" aria-label="骑行补水提示">
+          <span class="bottom-note-mark" aria-hidden="true">✳</span>
+          <p><strong>小小补水提示</strong><span>骑行时少量、多次喝水，会比等到口渴再喝更舒服。</span></p>
+          <span class="bottom-note-end">TAKE IT EASY <span>·</span> STAY HYDRATED</span>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>MADE FOR SLOW DAYS</span>
+        <span>记得喝水，也记得享受路上。</span>
+        <span>✳</span>
+      </footer>
+    </div>
+  </body>
+</html>
