@@ -1,4 +1,21 @@
 # 醍醐的补水骑行
 
-A small animated webpage featuring 醍醐 cycling and taking refreshing water breaks.
-The application will be developed on a feature branch and submitted through a pull request.
+一页关于慢慢骑车、记得喝水的小小骑行日记。醍醐会沿着河边骑一会儿，停下来喝口水，再继续出发。
+
+## 本地预览
+
+需要 Python 3。启动静态文件服务器：
+
+```powershell
+python -m http.server 4173
+```
+
+打开 <http://localhost:4173>。
+
+## 交互
+
+- **喝口水**：播放一次喝水动作，然后回到之前的播放或暂停状态。
+- **暂停动画 / 继续动画**：控制骑行和景色动画，也可以在页面空白处按空格键。
+- 页面尊重系统“减少动态效果”设置；核心画面不依赖远程资源。
+
+需求和浏览器验收步骤见 [`specs/001-taigu-cycling-water/`](specs/001-taigu-cycling-water/)。
