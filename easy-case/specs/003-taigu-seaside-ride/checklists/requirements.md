@@ -7,4 +7,6 @@
 - [x] Character species is confirmed as a pelican.
 - [x] Non-anthropomorphic body and no legacy visual reuse are explicit.
 - [x] Pelican anatomy is reflected in the silhouette.
+- [x] Shoreline, beach and coast road have explicit spatial relationships.
+- [ ] Water break requires a stopped bicycle, a bird beside freshwater, bill contact, scooping and head-up swallow.
 - [x] Browser evidence is recorded against each acceptance criterion.

@@ -13,14 +13,15 @@ const shots = [
   { name: "海岸远景", status: "轮声掠过海岸，下一程向蓝而行。" },
   { name: "低机位跟拍", status: "车轮转起来，海岸线一路向前。" },
   { name: "车轮掠影", status: "阳光从辐条间闪过，路面向后延伸。" },
-  { name: "海边补水", status: "停在海风里，醍醐用长喙饮水。" },
-  { name: "迎风出发", status: "补足水分，沿着海岸继续前进。" },
+  { name: "溪边饮水", status: "停靠在淡水溪边，取水后仰头吞咽。" },
+  { name: "迎风出发", status: "补足水分，沿着海岸公路继续前进。" },
 ];
 
 const shotClasses = ["shot-establish", "shot-follow", "shot-wheel", "shot-water", "shot-accelerate"];
-const shotDuration = 3100;
+const shotDurations = [3100, 3100, 3100, 6500, 3100];
 let playing = !reducedMotion.matches;
 let drinking = false;
+let manualDrink = false;
 let stage = 0;
 let stageTimer;
 let drinkTimer;
@@ -35,7 +36,7 @@ function setProgress(running) {
   shotProgress.style.width = "0";
   if (running && !reducedMotion.matches) {
     void shotProgress.offsetWidth;
-    shotProgress.style.animation = "shot-progress " + shotDuration + "ms linear both";
+    shotProgress.style.animation = "shot-progress " + shotDurations[stage] + "ms linear both";
   }
   shotProgress.style.animationPlayState = running ? "running" : "paused";
 }
@@ -58,12 +59,13 @@ function scheduleNextShot() {
   stageTimer = window.setTimeout(() => {
     showShot(stage + 1);
     scheduleNextShot();
-  }, shotDuration);
+  }, shotDurations[stage]);
 }
 
 function startDrink(manual) {
   if (drinking) return;
   drinking = true;
+  manualDrink = manual;
   manualReturnToPlaying = manual && playing;
   clearStageTimer();
   if (manual) {
@@ -74,8 +76,8 @@ function startDrink(manual) {
   }
   scene.classList.add("is-drinking");
   waterButton.disabled = true;
-  status.textContent = manual ? "醍醐停在海边，用长喙饮了一口水。" : "停在海风里，醍醐补充一点水分。";
-  drinkTimer = window.setTimeout(finishDrink, reducedMotion.matches ? 1200 : 1850);
+  status.textContent = manual ? "醍醐停好自行车，走到溪边用长喙取水，再抬头吞咽。" : "醍醐停好自行车，在溪边取水后仰头吞咽。";
+  drinkTimer = window.setTimeout(finishDrink, reducedMotion.matches ? 1200 : 5200);
 }
 
 function finishDrink() {
@@ -88,12 +90,14 @@ function finishDrink() {
     setPlaying(true);
     return;
   }
+  if (!manualDrink && playing) return;
   if (!playing) {
     scene.classList.add("is-paused");
     setProgress(false);
   }
-  status.textContent = playing ? shots[3].status : "醍醐在海边稍作休息。";
-  scheduleNextShot();
+  status.textContent = playing ? shots[3].status : "醍醐停在溪边稍作休息。";
+  if (manualDrink) scheduleNextShot();
+  manualDrink = false;
 }
 
 function setPlaying(nextPlaying) {

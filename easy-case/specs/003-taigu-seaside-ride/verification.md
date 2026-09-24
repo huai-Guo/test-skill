@@ -5,7 +5,7 @@
 
 | Acceptance | Result | Evidence |
 |---|---|---|
-| Pelican Taigu, bicycle, sunny coast and road are identifiable | Pass | Inspected rendered desktop and mobile scenes; head, bill pouch, feathered body, wings and webbed feet are distinct. |
+| Pelican Taigu, bicycle, sunny coast and road are identifiable | Pass (desktop visual re-review) | In the current rendered desktop scene, the long pelican bill, throat pouch, feathered body, folded wing and webbed feet are visible. The sea, continuous sand shoreline and coast road read as separate surfaces. |
 | Five-shot camera cycle and automatic water break repeat | Pass | Observed the running page for about 47 seconds; the shot indicator advanced through repeated cycles and the ride returned to the forward-tracking shot. |
 | Manual water break restores play state | Pass | Triggered manual drinking; live status announced the beak drinking motion, control re-enabled after about two seconds, and `aria-pressed` remained true for playback. |
 | Pause, resume, Space, focus and live status | Pass | Pause button set `aria-pressed=false`; Space from page content resumed it; Tab focus exposed a solid 3 px outline; shot and hydration messages updated. |
@@ -14,4 +14,4 @@
 | Console and parser errors | Pass | No browser warnings/errors; no HTML/SVG parser errors. |
 | Remote visual or code assets | Pass | No image, script, or stylesheet URL points outside the local origin; the scene is inline SVG. |
 
-The repository's required `git diff --check` completed without whitespace errors. No test framework or runtime dependency was added.
+The desktop visual re-review also checked that the road shoulder and center dashes follow a continuous bend, and that the shoreline does not break into disconnected segments. Mobile, reduced-motion and control behavior were not rechecked during this visual revision.

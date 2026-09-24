@@ -18,9 +18,9 @@
 
 - **Palette**: deep-ocean page background; turquoise sea and warm sunlit sky; pale sand; graphite blue-gray asphalt; chestnut and ivory pelican plumage; golden bill; coral bill pouch; blue-green bicycle.
 - **Camera**: low three-quarter tracking angle; horizon above the middle, road widens toward the viewer, rider anchors the lower-right third, curved coast recedes into the left distance.
-- **Depth**: atmospheric distance, layered headlands, overlapping road edge and guardrail, cast shadows, bevel-like frame highlights, wheel rim/spoke detail, reflective sea flecks, restrained lens flare and wind streaks.
-- **Storyboard**: 1) wide establishing shot; 2) tracking ride; 3) low wheel/road close-up; 4) shoulder pull-over and water break; 5) accelerate into tracking shot and loop.
-- **Motion**: synchronize wheel spin, alternating webbed feet, natural bird-body bob, wing balance, road marks and near/far parallax. Move the pelican's head and neck to drink; keep decorative effects behind the character and reduce them when reduced motion is requested.
+- **Depth**: keep the sea, continuous sand shoreline and coast road as distinct adjacent planes; make the road follow the shoreline and widen toward the foreground. Retain layered headlands, cast shadows, reflective sea flecks and restrained wind effects.
+- **Storyboard**: 1) wide establishing shot; 2) tracking ride; 3) low wheel/road close-up; 4) stop at the shoulder, dismount at a visible freshwater stream, scoop water with the bill and tip the head back to swallow; 5) return to the bicycle, accelerate and loop.
+- **Motion**: synchronize wheel spin, webbed-foot pedaling, natural bird-body bob and near/far parallax. During the water break, stop the wheels, show the kickstand, reveal the pelican beside the stream, animate bill-to-water contact, scoop and upward swallow. Keep effects behind the character; honor reduced-motion preference.
 
 ## Constitution Check
 

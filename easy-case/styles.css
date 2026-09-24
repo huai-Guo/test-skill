@@ -81,8 +81,8 @@ h1 em { color: #6ce0c6; font-style: normal; }
 .sea-shimmer path { animation: shimmer 4.8s ease-in-out infinite alternate; }
 .sea-shimmer path:nth-child(2n) { animation-delay: -2.2s; }
 .distant-gulls { animation: gull-glide 7s ease-in-out infinite alternate; }
-.road-dashes { animation: road-flow 1.5s linear infinite; }
-.road-effects { animation: road-flow 2.4s linear infinite; }
+.road-dashes { animation: road-dash 2.1s linear infinite; }
+.road-effects { animation: shimmer 3.5s ease-in-out infinite alternate; }
 .bike-shadow { transform-box: fill-box; transform-origin: center; animation: shadow-bob 1s ease-in-out infinite alternate; }
 .wheel { transform-box: fill-box; transform-origin: center; animation: wheel-spin .9s linear infinite; }
 .spokes { transform-box: fill-box; transform-origin: center; }
@@ -94,13 +94,25 @@ h1 em { color: #6ce0c6; font-style: normal; }
 .bird-head { transform-box: view-box; transform-origin: 640px 230px; transition: transform .68s cubic-bezier(.2,.8,.2,1); }
 .neck-main, .neck-drink { transition: opacity .25s ease; }
 .neck-drink { opacity: 0; }
-.wing-steer { transform-box: view-box; transform-origin: 660px 305px; animation: wing-glide 1.2s ease-in-out infinite alternate; }
 .water-bottle { transform-box: view-box; transform-origin: center; transition: transform .55s cubic-bezier(.2,.8,.2,1); }
-.ride-scene.is-drinking .bird-head { transform: translate(0,98px) rotate(-12deg); }
-.ride-scene.is-drinking .neck-main { opacity: 0; }
-.ride-scene.is-drinking .neck-drink { opacity: 1; }
-.ride-scene.is-drinking .water-bottle { transform: scale(1.1); }
+.kickstand { opacity: 0; transition: opacity .25s ease; }
+.water-pelican-enter { opacity: 0; pointer-events: none; transform-box: view-box; transform: translateX(28px); }
+.water-pelican { opacity: 1; }
+.drink-neck-head { transform-box: view-box; transform-origin: 620px 235px; }
+.drink-pouch { transform-box: fill-box; transform-origin: center top; }
+.shot-water .rider { animation: none; opacity: 0; }
+.shot-water .wheel, .shot-water .crank, .shot-water .road-dashes, .shot-water .road-effects, .shot-water .bike-shadow { animation-play-state: paused; }
+.shot-water .kickstand, .shot-water .water-pelican-enter { opacity: 1; }
+.shot-water .water-pelican-enter { animation: water-step-in .72s cubic-bezier(.2,.8,.2,1) both; }
+.ride-scene.is-drinking .drink-neck-head { animation: pelican-sip 5s cubic-bezier(.3,.05,.2,1) both; }
+.ride-scene.is-drinking .drink-pouch { animation: pouch-scoop 5s ease-in-out both; }
 .ride-scene.is-drinking .drink-ripples { animation: sip-ripple 1.15s ease-out infinite; }
+.ride-scene.is-drinking .swallow-drops { animation: swallow 5s ease-in-out both; }
+.ride-scene.is-paused.is-drinking .water-pelican-enter,
+.ride-scene.is-paused.is-drinking .drink-neck-head,
+.ride-scene.is-paused.is-drinking .drink-pouch,
+.ride-scene.is-paused.is-drinking .drink-ripples,
+.ride-scene.is-paused.is-drinking .swallow-drops { animation-play-state: running !important; }
 .wind-lines { animation: wind-sweep 2.2s ease-in-out infinite; }
 .sparkles path, .sparkles circle { transform-box: fill-box; transform-origin: center; animation: sparkle 2.4s ease-in-out infinite alternate; }
 .sparkles > :nth-child(2) { animation-delay: -.9s; }
@@ -170,13 +182,31 @@ kbd { padding: 4px 6px; border: 1px solid rgba(164,217,200,.25); border-radius: 
 @keyframes sun-breathe { from { opacity: .58; } to { opacity: .98; } }
 @keyframes shimmer { from { transform: translateX(-11px); opacity: .55; } to { transform: translateX(15px); opacity: .95; } }
 @keyframes gull-glide { from { transform: translate(-6px,3px); } to { transform: translate(19px,-5px); } }
-@keyframes road-flow { to { transform: translateY(27px); } }
+@keyframes road-dash { to { stroke-dashoffset: -98; } }
 @keyframes shadow-bob { from { transform: scaleX(1); opacity: .28; } to { transform: scaleX(.95); opacity: .21; } }
 @keyframes wind-sweep { from { transform: translateX(0); opacity: .55; } to { transform: translateX(18px); opacity: .95; } }
 @keyframes sparkle { from { opacity: .48; transform: scale(.72); } to { opacity: 1; transform: scale(1.16); } }
 @keyframes sip-ripple { 0% { opacity: 0; transform: scale(.72); } 45% { opacity: .9; } 100% { opacity: 0; transform: scale(1.45); } }
 @keyframes shot-progress { to { width: 100%; } }
 @keyframes wing-glide { from { transform: rotate(-1deg); } to { transform: rotate(1.2deg); } }
+@keyframes water-step-in { from { opacity: 0; transform: translateX(42px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes pelican-sip {
+  0%, 12% { transform: translateY(0) rotate(0); }
+  29%, 38% { transform: translateY(154px) rotate(0); }
+  47% { transform: translateY(154px) rotate(-5deg); }
+  59%, 73% { transform: translateY(27px) rotate(-43deg); }
+  84% { transform: translateY(0) rotate(-40deg); }
+  100% { transform: translateY(0) rotate(0); }
+}
+@keyframes pouch-scoop {
+  0%, 23%, 48%, 100% { transform: scaleY(1); }
+  35%, 42% { transform: scaleY(1.22); }
+  62%, 72% { transform: scaleY(.9); }
+}
+@keyframes swallow {
+  0%, 45%, 78%, 100% { opacity: 0; transform: translateY(0); }
+  55%, 68% { opacity: 1; transform: translateY(-9px); }
+}
 
 @media (max-width: 1120px) {
   .page-shell { width: min(100% - 64px, 1020px); }
@@ -250,6 +280,8 @@ kbd { padding: 4px 6px; border: 1px solid rgba(164,217,200,.25); border-radius: 
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-  .ride-scene .cloud, .ride-scene .sun-ray, .ride-scene .sea-shimmer, .ride-scene .distant-gulls, .ride-scene .road-dashes, .ride-scene .road-effects, .ride-scene .wheel, .ride-scene .crank, .ride-scene .rider, .ride-scene .wing-steer, .ride-scene .wind-lines, .ride-scene .sparkles { animation: none !important; }
+  .ride-scene .cloud, .ride-scene .sun-ray, .ride-scene .sea-shimmer, .ride-scene .distant-gulls, .ride-scene .road-dashes, .ride-scene .road-effects, .ride-scene .wheel, .ride-scene .crank, .ride-scene .rider, .ride-scene .wind-lines, .ride-scene .sparkles { animation: none !important; }
   .ride-scene .camera { transform: none !important; }
+  .ride-scene.is-drinking .drink-neck-head { animation: none !important; transform: translateY(154px); }
+  .ride-scene.is-drinking .drink-pouch { animation: none !important; transform: scaleY(1.22); }
 }
