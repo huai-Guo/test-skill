@@ -3,118 +3,233 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f5f1e8" />
-    <meta name="description" content="河岸边，一只鹈鹕低头喝水的片刻。" />
-    <title>河岸小歇 · 鹈鹕的饮水时间</title>
-    <link rel="stylesheet" href="styles.css?v=2" />
-    <script src="app.js?v=2" defer></script>
+    <meta name="theme-color" content="#092b3a" />
+    <meta name="description" content="和鹈鹕醍醐一起骑过晴朗的海岸公路，迎着海风自在出发。" />
+    <title>醍醐逐风 · 骑过蓝色海岸</title>
+    <link rel="stylesheet" href="styles.css?v=3" />
+    <script src="app.js?v=3" defer></script>
   </head>
   <body>
     <div class="page-shell">
       <header class="topbar">
-        <a class="brand" href="#top" aria-label="河岸观察首页">
+        <a class="brand" href="#top" aria-label="蓝岸逐风首页">
           <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 40 40"><path d="M6 25c5-7 10-10 16-10 5 0 8 2 12 7-5-2-9-1-13 2-4 3-9 4-15 1Z"/><circle cx="25" cy="13" r="2"/><path d="M5 31h30"/></svg>
+            <svg viewBox="0 0 42 42"><path d="M5 27c6-9 12-13 20-13 5 0 9 2 13 7-7-2-12-1-17 3-5 4-10 5-16 3Z"/><circle cx="29" cy="11" r="2.2"/><path d="M6 34h30"/></svg>
           </span>
-          <span class="brand-copy"><strong>河岸观察</strong><small>RIVERSIDE FIELD NOTES</small></span>
+          <span class="brand-copy"><strong>蓝岸逐风</strong><small>PELAGIC RIDE JOURNAL</small></span>
         </a>
-        <div class="topbar-center"><span class="topbar-dot" aria-hidden="true"></span> 一段关于水边的慢镜头</div>
-        <a class="top-link" href="#scene-controls">看动画 <span aria-hidden="true">↓</span></a>
+        <div class="topbar-center"><span class="live-dot" aria-hidden="true"></span> 海岸线记录 · 24° 晴</div>
+        <a class="top-link" href="#ride-controls">路线 03 / 08 KM <span aria-hidden="true">↘</span></a>
       </header>
 
       <main id="top">
         <section class="hero" aria-labelledby="hero-title">
           <div class="intro">
-            <p class="eyebrow"><span>FIELD NOTE</span><i></i><span>NO. 02</span></p>
-            <h1 id="hero-title">河风正好，<br /><em>喝口水吧。</em></h1>
-            <p class="intro-copy">太阳刚刚越过芦苇。一只鹈鹕停在浅水边，低下长长的喙，给旅程留一点从容。</p>
-
-            <div class="observation-card">
-              <span class="observation-icon" aria-hidden="true">✳</span>
-              <span class="observation-copy"><small>今日观察</small><strong>河湾浅滩 <i>·</i> 清晨 06:40</strong></span>
-              <span class="observation-arrow" aria-hidden="true">↗</span>
+            <p class="eyebrow"><span>PELAGIC COASTLINE</span><i></i><span>FIELD LOG 03</span></p>
+            <h1 id="hero-title">醍醐逐风，<br /><em>骑过蓝色海岸。</em></h1>
+            <p class="intro-copy">鹈鹕醍醐沿着海岸公路前行。转过一道弯，阳光、海浪和远处的岛屿，一起铺展开来。</p>
+            <div class="route-card">
+              <span class="route-icon" aria-hidden="true">
+                <svg viewBox="0 0 44 44"><path d="M7 34c6-14 12-23 21-25 5-1 9 2 8 5-1 3-4 4-7 2-2-2-1-5 2-7"/><circle cx="8" cy="34" r="3"/><circle cx="31" cy="34" r="3"/></svg>
+              </span>
+              <span class="route-copy"><small>COASTAL ROUTE</small><strong>晴日海岸线 <i>·</i> 微风</strong></span>
+              <span class="route-distance"><b>08</b><small>KM</small></span>
             </div>
-
-            <div class="intro-note"><span class="note-line" aria-hidden="true"></span><span>慢一点，才能看见水面的光。</span></div>
+            <div class="intro-note"><span class="note-line" aria-hidden="true"></span><span>转过弯，就是一整片蓝。</span></div>
           </div>
 
-          <div class="scene-column">
-            <figure class="scene-card">
-              <div class="scene-topline"><span><i></i> A QUIET MOMENT BY THE RIVER</span><span>RIVERBANK <b>·</b> 02</span></div>
+          <div class="ride-column">
+            <figure class="ride-card">
+              <div class="scene-topline">
+                <span class="scene-kicker"><i></i> A RIDE ALONG THE BLUE</span>
+                <span class="scene-number">COAST <b>·</b> 01</span>
+              </div>
               <div class="scene-wrap">
-                <svg id="pelicanScene" class="pelican-scene" viewBox="0 0 1100 680" role="img" aria-labelledby="scene-title scene-description" xmlns="http://www.w3.org/2000/svg">
-                  <title id="scene-title">鹈鹕在河岸边低头饮水</title>
-                  <desc id="scene-description">一只白色鹈鹕站在暖色晨光照耀的浅滩边，低下长喙饮水，水面泛起一圈圈涟漪。</desc>
+                <svg id="rideScene" class="ride-scene shot-establish" viewBox="0 0 1200 720" role="img" aria-labelledby="scene-title scene-description" xmlns="http://www.w3.org/2000/svg">
+                  <title id="scene-title">鹈鹕醍醐骑过晴朗的海岸公路</title>
+                  <desc id="scene-description">低机位三分之四视角的海岸骑行插画：鹈鹕醍醐保持自然鸟形，翼尖搭在车把上，蹼足踏着踏板，掠过碧蓝海面。镜头随骑行变化，醍醐停下用长喙饮水后再出发。</desc>
                   <defs>
-                    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d8e9d8"/><stop offset="1" stop-color="#f0e6c8"/></linearGradient>
-                    <linearGradient id="river" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#9ac5b7"/><stop offset="1" stop-color="#5d978f"/></linearGradient>
-                    <linearGradient id="feather" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf5"/><stop offset="1" stop-color="#e5e4d4"/></linearGradient>
-                    <linearGradient id="bill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4ae54"/><stop offset="1" stop-color="#d86e40"/></linearGradient>
-                    <pattern id="grain" width="36" height="36" patternUnits="userSpaceOnUse"><circle cx="4" cy="7" r="1" fill="#47776c" opacity=".1"/><circle cx="25" cy="27" r="1.3" fill="#47776c" opacity=".08"/></pattern>
+                    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#8dd2e8"/><stop offset=".58" stop-color="#d7f0e7"/><stop offset="1" stop-color="#ffe2ad"/></linearGradient>
+                    <radialGradient id="sunGlow"><stop stop-color="#fff9cf" stop-opacity=".96"/><stop offset=".25" stop-color="#fff2b4" stop-opacity=".56"/><stop offset="1" stop-color="#fff2b4" stop-opacity="0"/></radialGradient>
+                    <linearGradient id="sea" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#6ed5d3"/><stop offset=".44" stop-color="#25aeb8"/><stop offset="1" stop-color="#14728d"/></linearGradient>
+                    <linearGradient id="seaDeep" x2="0" y2="1"><stop stop-color="#167d91"/><stop offset="1" stop-color="#0c526d"/></linearGradient>
+                    <linearGradient id="road" x2="0" y2="1"><stop stop-color="#637784"/><stop offset=".48" stop-color="#394d5d"/><stop offset="1" stop-color="#263849"/></linearGradient>
+                    <linearGradient id="roadLight" x2="0" y2="1"><stop stop-color="#c5bda2"/><stop offset="1" stop-color="#887e70"/></linearGradient>
+                    <linearGradient id="feather" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff9e8"/><stop offset=".62" stop-color="#e8e8d8"/><stop offset="1" stop-color="#c5d3c6"/></linearGradient>
+                    <linearGradient id="mintFrame" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7be6d0"/><stop offset=".48" stop-color="#28a9bb"/><stop offset="1" stop-color="#176387"/></linearGradient>
+                    <linearGradient id="pelicanBody" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b17a53"/><stop offset=".5" stop-color="#79503f"/><stop offset="1" stop-color="#493a3b"/></linearGradient>
+                    <linearGradient id="pelicanWing" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dbab78"/><stop offset=".45" stop-color="#98664e"/><stop offset="1" stop-color="#503e40"/></linearGradient>
+                    <linearGradient id="beak" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe38b"/><stop offset=".62" stop-color="#f6b94f"/><stop offset="1" stop-color="#de8646"/></linearGradient>
+                    <linearGradient id="pouch" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#f09b76"/><stop offset=".55" stop-color="#da6f67"/><stop offset="1" stop-color="#a84958"/></linearGradient>
+                    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="13"/></filter>
+                    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="8"/></filter>
+                    <pattern id="roadGrain" width="46" height="46" patternUnits="userSpaceOnUse"><circle cx="8" cy="13" r="1.2" fill="#d4e4dc" opacity=".15"/><circle cx="34" cy="33" r="1" fill="#e5b78b" opacity=".15"/></pattern>
+                    <clipPath id="sceneClip"><rect width="1200" height="720" rx="2"/></clipPath>
                   </defs>
 
-                  <rect width="1100" height="680" fill="url(#sky)"/>
-                  <rect width="1100" height="680" fill="url(#grain)"/>
-                  <circle cx="835" cy="137" r="48" fill="#efbd68" opacity=".94"/>
-                  <circle cx="835" cy="137" r="72" fill="#efbd68" opacity=".13"/>
-                  <g class="cloud cloud-one" fill="#fffdf2" opacity=".75"><ellipse cx="208" cy="148" rx="72" ry="18"/><circle cx="183" cy="138" r="25"/><circle cx="221" cy="126" r="31"/><circle cx="251" cy="145" r="20"/></g>
-                  <g class="cloud cloud-two" fill="#fffdf2" opacity=".58"><ellipse cx="685" cy="218" rx="50" ry="14"/><circle cx="665" cy="211" r="18"/><circle cx="693" cy="200" r="23"/><circle cx="718" cy="215" r="16"/></g>
-
-                  <path d="M0 329c137-73 249-78 365-24 93-73 212-78 315-25 127-79 270-53 420 11v166H0Z" fill="#b4c7a0"/>
-                  <path d="M0 362c142-45 260-35 376 12 125-61 251-50 364 8 120-48 231-36 360 9v122H0Z" fill="#779a78"/>
-                  <path d="M0 394c118 14 207 7 324-22 113-28 222-16 340 20 143 44 273 44 436 11v277H0Z" fill="url(#river)"/>
-                  <path d="M0 440c129 20 221 12 337-16 116-27 222-18 339 17 141 42 276 40 424 9" fill="none" stroke="#d8e7cf" stroke-width="5" opacity=".7"/>
-                  <path d="M0 477c123 18 226 10 344-15 118-26 229-15 344 16 146 40 273 35 412 8" fill="none" stroke="#b8d8c9" stroke-width="3" opacity=".72"/>
-
-                  <g class="far-reeds" fill="#647f5e" opacity=".72"><path d="M98 395c-9-62-3-103 8-142 10 40 16 84 7 145Zm22 2c14-49 34-83 57-111-6 48-20 87-45 117Zm-48 1c-23-43-28-76-27-111 25 38 39 71 34 112Z"/><path d="M961 402c-7-59 0-101 13-139 8 42 12 87 3 144Zm23 4c15-48 36-81 60-107-7 47-23 86-49 114Zm-49 0c-23-40-29-74-29-108 26 37 42 68 37 109Z"/></g>
-                  <g class="near-reeds" fill="#526f55"><path d="M115 509c-8-53-4-94 7-130 10 39 13 79 6 130Zm22 2c13-41 29-69 50-94-5 41-18 73-40 99Z"/><path d="M1005 516c-6-48 1-88 12-123 8 37 11 76 4 125Zm22 2c14-40 32-67 53-90-7 40-19 71-42 96Z"/></g>
-
-                  <g class="water-glints" fill="none" stroke="#e4f0d9" stroke-linecap="round"><path d="M89 538h90M179 573h142M827 528h110M718 595h168" stroke-width="4" opacity=".72"/><path d="M95 611h68M937 570h80M382 528h84" stroke-width="3" opacity=".5"/></g>
-                  <ellipse cx="478" cy="512" rx="177" ry="29" fill="#285b54" opacity=".14"/>
-
-                  <g class="pelican" stroke-linecap="round" stroke-linejoin="round">
-                    <g class="legs" fill="none" stroke="#d68d43" stroke-width="9"><path d="m462 465 4 74-23 12m23-12 17 11m79-82-1 73-19 11m19-11 17 10"/></g>
-                    <path class="body" d="M421 356c28-60 94-89 161-66 61 21 98 82 76 137-17 43-68 68-131 59-75-10-124-58-106-130Z" fill="url(#feather)" stroke="#b8b9a8" stroke-width="5"/>
-                    <path class="wing" d="M463 370c39-41 104-46 151-11 23 17 38 43 38 67-34 39-84 54-130 41-33-10-58-35-69-70Z" fill="#406c70" stroke="#315c60" stroke-width="5"/>
-                    <path d="M488 389c30-23 72-27 108-13m-93 31c27-14 58-15 86-7" fill="none" stroke="#91b0a4" stroke-width="4" opacity=".8"/>
-                    <path class="neck" d="M507 371c-18-31-24-58-13-91 12-38 43-53 76-42 27 9 38 34 28 57-8 19-25 27-45 21-18-5-23-17-17-31" fill="none" stroke="#f8f5e9" stroke-width="35"/>
-                    <path d="M517 293c-6-25 5-45 27-55" fill="none" stroke="#d9ddcf" stroke-width="3"/>
-                    <circle cx="563" cy="264" r="26" fill="url(#feather)" stroke="#b8b9a8" stroke-width="4"/>
-                    <path d="M544 250c6-15 22-22 38-15" fill="none" stroke="#4c7776" stroke-width="9"/>
-                    <circle cx="570" cy="262" r="5.5" fill="#223f3d"/><circle cx="571.5" cy="260.5" r="1.7" fill="#fffdf3"/>
-                    <path d="M581 270c7 1 11 4 15 8" fill="none" stroke="#b9674a" stroke-width="3"/>
-
-                    <g class="pelican-bill">
-                      <path d="M547 276c-54 12-111 47-169 105 74-23 126-49 178-89Z" fill="url(#bill)" stroke="#b85f3b" stroke-width="4"/>
-                      <path d="M380 376c23-9 51-21 77-37 30-18 59-36 97-48-16 44-48 84-83 104-37 21-78 5-91-19Z" fill="#e88a55" stroke="#bd6342" stroke-width="4"/>
-                      <path d="M394 380c36-9 68-25 98-45" fill="none" stroke="#f7c77e" stroke-width="4" opacity=".75"/>
+                  <g class="camera">
+                    <g class="sky-layer">
+                      <rect width="1200" height="720" fill="url(#sky)"/>
+                      <circle cx="938" cy="142" r="186" fill="url(#sunGlow)"/>
+                      <circle cx="938" cy="142" r="52" fill="#fff2bb" opacity=".84"/>
+                      <path class="sun-ray" d="M938 44v-24m0 245v-24m98-99h25M813 142h24m169-69 18-18M841 231l18-18m158 0 18 18M841 53l18 18" stroke="#fff4cd" stroke-width="4" stroke-linecap="round" opacity=".58"/>
+                      <g class="cloud cloud-a" fill="#f8ffef" opacity=".78"><ellipse cx="254" cy="143" rx="90" ry="22"/><circle cx="220" cy="133" r="28"/><circle cx="258" cy="115" r="39"/><circle cx="298" cy="138" r="26"/></g>
+                      <g class="cloud cloud-b" fill="#fffdf0" opacity=".6"><ellipse cx="705" cy="196" rx="56" ry="15"/><circle cx="686" cy="188" r="20"/><circle cx="714" cy="179" r="27"/><circle cx="742" cy="193" r="18"/></g>
+                      <path d="M0 332c120-32 204-50 313-27 92 20 163 8 240-24 119-50 225-9 320 9 108 21 205-21 327-9v171H0Z" fill="#9abf9c"/>
+                      <path d="M0 363c139-27 248-18 348 8 108 28 204 15 303-12 109-30 222-19 331 11 80 22 147 11 218-7v153H0Z" fill="#548f81"/>
+                      <path d="M0 378c152-11 249 3 367 25 125 24 218 12 320-5 112-19 205-9 311 13 83 17 141 13 202 1v163H0Z" fill="url(#sea)"/>
+                      <path d="M0 476c180-27 303-8 417 18 148 33 243 22 357 0 135-26 260-7 426 23v203H0Z" fill="url(#seaDeep)" opacity=".54"/>
+                      <path d="M0 382c155-11 267 11 376 29 125 21 234 11 334-4 139-21 236-8 365 18 48 10 86 12 125 9" fill="none" stroke="#e9f6df" stroke-width="7" opacity=".72"/>
+                      <g class="sea-shimmer" fill="none" stroke="#c9f9eb" stroke-linecap="round">
+                        <path d="M83 431h78m47 15h105m534-27h76m49 17h116M348 493h68m331 21h125m86 31h113M73 558h117m315-23h74m402 67h106" stroke-width="4" opacity=".75"/>
+                        <path d="M180 518h47m545-96h46m-392 132h91m242 55h66M68 606h60m441-9h58m389-82h88" stroke-width="2.5" opacity=".65"/>
+                      </g>
+                      <path d="M0 422c92-35 185-36 261-14 51 15 91 39 130 74-128 11-261 8-391-3Z" fill="#d6c08c"/>
+                      <path d="M0 435c96-31 184-28 262-4 39 12 73 30 102 51-105 8-226 4-364-6Z" fill="#8ba579"/>
+                      <path d="M0 456c126-29 229-16 334 26 96 38 177 52 269 55-151 40-316 31-603-13Z" fill="#e4ca92"/>
+                      <path d="M0 455c125-29 228-15 334 27 100 39 176 53 269 55" fill="none" stroke="#fff0c6" stroke-width="6" opacity=".8"/>
+                      <g class="distant-gulls" fill="none" stroke="#f9fff1" stroke-width="3" stroke-linecap="round"><path d="m484 161 13-8 13 8m31-24 10-6 11 6m-27 54 9-5 9 5"/></g>
                     </g>
+
+                    <g class="road-layer">
+                      <path d="M408 413c107-34 210-31 298-16 133 23 214 56 494 13v310H334Z" fill="#29454d" opacity=".32"/>
+                      <path d="M440 402c127-24 218-7 313 12 141 28 266 44 447 7v299H302Z" fill="url(#roadLight)"/>
+                      <path d="M474 413c103-29 202-19 289-1 160 33 282 42 437 11v297H339Z" fill="url(#road)"/>
+                      <path d="M474 413c103-29 202-19 289-1 160 33 282 42 437 11v297H339Z" fill="url(#roadGrain)" opacity=".62"/>
+                      <path d="M439 404c139-29 225-8 322 11 133 26 260 42 439 6" fill="none" stroke="#fff0c9" stroke-width="9" opacity=".8"/>
+                      <path d="M474 413c103-29 202-19 289-1 160 33 282 42 437 11" fill="none" stroke="#a8d5c7" stroke-width="3" opacity=".75"/>
+                      <g class="road-dashes" fill="#f8edcc" opacity=".88"><path d="m724 454 42 5-2 9-43-5Z"/><path d="m806 493 58 8-4 12-59-9Z"/><path d="m910 548 75 12-7 17-75-13Z"/><path d="m1044 622 98 18-11 24-98-19Z"/></g>
+                      <path d="M322 716c96-100 139-167 153-246" fill="none" stroke="#f2d596" stroke-width="12" opacity=".8"/>
+                      <path d="M325 716c95-99 139-166 155-245" fill="none" stroke="#fff5d6" stroke-width="3" opacity=".86"/>
+                    </g>
+
+                    <g class="road-effects" fill="none" stroke="#e7faf0" stroke-linecap="round">
+                      <path d="M55 647h116m32-24h75m-97 72h162M865 389h63m116 30h74" stroke-width="4" opacity=".48"/>
+                      <path d="M116 687h73m774-294h60" stroke-width="2" opacity=".6"/>
+                    </g>
+
+                    <ellipse class="bike-shadow" cx="688" cy="574" rx="263" ry="35" fill="#123847" opacity=".28" filter="url(#softShadow)"/>
+
+                    <g class="bike" stroke-linecap="round" stroke-linejoin="round">
+                      <g class="wheel-mount rear-wheel-mount" transform="translate(516 508)">
+                        <g class="wheel rear-wheel">
+                          <circle r="98" fill="#243c48" stroke="#182e3d" stroke-width="13"/>
+                          <circle r="88" fill="none" stroke="#d6e5d9" stroke-width="4"/>
+                          <circle r="81" fill="none" stroke="#79c3b3" stroke-width="2" opacity=".88"/>
+                          <g class="spokes" stroke="#b4cfc5" stroke-width="2.3" opacity=".78"><path d="M0-82V82M-82 0H82M-58-58 58 58M58-58-58 58M-31-76 31 76M76-31-76 31M31-76-31 76M76 31-76-31"/></g>
+                          <circle r="12" fill="#f3c36b" stroke="#fff2cf" stroke-width="4"/>
+                          <path d="M-20-91q20-7 40 0" fill="none" stroke="#fffdf0" stroke-width="4" opacity=".82"/>
+                        </g>
+                      </g>
+                      <g class="wheel-mount front-wheel-mount" transform="translate(837 555)">
+                        <g class="wheel front-wheel">
+                          <circle r="121" fill="#243c48" stroke="#182e3d" stroke-width="15"/>
+                          <circle r="108" fill="none" stroke="#d6e5d9" stroke-width="5"/>
+                          <circle r="99" fill="none" stroke="#79c3b3" stroke-width="2.5" opacity=".88"/>
+                          <g class="spokes" stroke="#b4cfc5" stroke-width="2.6" opacity=".78"><path d="M0-101V101M-101 0H101M-71-71 71 71M71-71-71 71M-39-93 39 93M93-39-93 39M39-93-39 93M93 39-93-39"/></g>
+                          <circle r="14" fill="#f3c36b" stroke="#fff2cf" stroke-width="4"/>
+                          <path d="M-24-111q24-9 48 0" fill="none" stroke="#fffdf0" stroke-width="5" opacity=".82"/>
+                        </g>
+                      </g>
+                      <g fill="none" stroke="url(#mintFrame)" stroke-width="15">
+                        <path d="m516 508 157-2-48-126-109 128m109-128 147 182m-147-182 126 9 21 173m-126-173-14-3"/>
+                        <path d="m780 381 26-21 27 3" stroke-width="11"/>
+                        <path d="m622 375-41-5" stroke-width="13"/>
+                      </g>
+                      <g fill="none" stroke="#e1ffdc" stroke-width="3.5" opacity=".84">
+                        <path d="m530 500 132-2-42-104m115-5 119 147"/>
+                        <path d="m780 381 26-21 27 3m-227 12-38-3"/>
+                      </g>
+                      <g fill="none" stroke="#174e53" stroke-width="6">
+                        <path d="m505 508 22 0m296 0 29 0"/>
+                        <path d="m806 360 30 2" stroke-width="8"/>
+                      </g>
+                      <g class="crank-mount" transform="translate(673 506)">
+                        <g class="crank">
+                          <circle r="14" fill="#f7cc79" stroke="#28585a" stroke-width="5"/>
+                          <path d="M0 0 27 2 31 25m-31-25-25-3-3-26" fill="none" stroke="#28545a" stroke-width="9"/>
+                          <circle cx="31" cy="27" r="8" fill="#f27d63"/><circle cx="-29" cy="-54" r="7" fill="#f27d63"/>
+                        </g>
+                      </g>
+                      <path d="M621 373h42" stroke="#334950" stroke-width="13"/>
+                      <path d="M622 369h40" stroke="#fae6bd" stroke-width="4" opacity=".7"/>
+                      <g class="water-bottle" aria-hidden="true">
+                        <path d="M687 423h20v10h7v47q0 10-10 10h-15q-10 0-10-10v-47h8Z" fill="#b7f1d1" stroke="#287b70" stroke-width="4"/>
+                        <path d="M681 449h32" stroke="#fff4cb" stroke-width="5"/>
+                        <path d="M691 418h14v6h-14Z" fill="#ffc86f" stroke="#287b70" stroke-width="3"/>
+                        <path d="M689 463h17" stroke="#62bfa5" stroke-width="3" opacity=".9"/>
+                      </g>
+                    </g>
+
+                    <g class="rider">
+                      <path class="tail-feathers" d="M563 309q-45-28-74-30 22 30 68 48m-61-7q28 22 69 25" fill="#5e4845" stroke="#473b40" stroke-width="5" stroke-linecap="round"/>
+                      <ellipse class="pelican-body" cx="625" cy="320" rx="83" ry="53" transform="rotate(-8 625 320)" fill="url(#pelicanBody)" stroke="#513e3e" stroke-width="6"/>
+                      <path class="belly" d="M579 324q27-30 68-26 33 4 49 36-36 33-83 22-24-5-34-32Z" fill="url(#feather)" stroke="#c4c0ad" stroke-width="4"/>
+                      <path class="wing-folded" d="M576 294q45-34 93-12 22 11 35 35-36 32-93 25-23-13-35-48Z" fill="url(#pelicanWing)" stroke="#5b4140" stroke-width="5"/>
+                      <path d="M593 298q31-16 63-7m-49 22q35-16 66-4m-50 19q25-9 44-4" fill="none" stroke="#e1b589" stroke-width="4" stroke-linecap="round" opacity=".72"/>
+                      <path class="neck-main" d="M636 308q-23-16-25-41-3-25 19-49" fill="none" stroke="url(#feather)" stroke-width="29" stroke-linecap="round"/>
+                      <path class="neck-drink" d="M635 302q18 1 43 34 14 18 35 24" fill="none" stroke="url(#feather)" stroke-width="27" stroke-linecap="round"/>
+                      <g class="bird-head">
+                        <path d="M600 202q5-35 40-39 32 3 40 36l-7 35q-7 20-31 22-34-3-43-27Z" fill="url(#feather)" stroke="#a4ac9d" stroke-width="5"/>
+                        <path d="M607 198q-8-22 10-36m2 35q3-25 23-34m8 39q4-23 19-28" fill="none" stroke="#fffdf1" stroke-width="7" stroke-linecap="round"/>
+                        <ellipse cx="624" cy="208" rx="8" ry="10" fill="#253a45"/>
+                        <circle cx="626" cy="205" r="2.7" fill="#fffdf0"/>
+                        <path d="M634 224q40-3 78 8 24 7 44 23-49 16-88 8-29-6-37-39Z" fill="url(#beak)" stroke="#b26c42" stroke-width="5"/>
+                        <path d="M647 245q44 15 96 17-19 45-59 47-44-7-51-45Z" fill="url(#pouch)" stroke="#a14f50" stroke-width="5"/>
+                        <path d="M651 256q42 17 84 19m-73 10q31 15 61 13" fill="none" stroke="#ffc2a0" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+                        <path d="M650 231q43 0 80 15" fill="none" stroke="#fff0b9" stroke-width="4" stroke-linecap="round" opacity=".86"/>
+                        <path d="M606 229q8 30 31 37" fill="none" stroke="#b6b4a2" stroke-width="4"/>
+                      </g>
+                      <g class="wing-steer">
+                        <path d="M654 291q46-12 77 9l62 53-28 15-68-39-54 4Z" fill="url(#pelicanWing)" stroke="#5b4140" stroke-width="6"/>
+                        <path d="M684 302q38-7 71 18m-53 0 52 31m-77-22 53 26" fill="none" stroke="#e4b78c" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+                        <path d="M787 350q10-6 19 2l5 9q-9 7-20 2Z" fill="#795342" stroke="#523d40" stroke-width="4"/>
+                      </g>
+                      <path class="bird-leg leg-back" d="M590 350q-3 51 25 88l45 65" fill="none" stroke="#d08d50" stroke-width="12" stroke-linecap="round"/>
+                      <path class="bird-leg leg-front" d="M641 359q28 39 21 72l10 73" fill="none" stroke="#e4a95d" stroke-width="13" stroke-linecap="round"/>
+                      <path class="webbed-foot foot-back" d="m656 493 15 12 20-9q5 1 3 7l-18 11 21 2q5 4 0 7l-27-1q-13 8-22-1l-7-11Z" fill="#eab963" stroke="#a96d49" stroke-width="4" stroke-linejoin="round"/>
+                      <path class="webbed-foot foot-front" d="m670 492 17 8 18-13q6 0 4 6l-15 15 21-2q6 2 1 7l-25 5q-12 12-22 3l-9-9Z" fill="#f1c86c" stroke="#a96d49" stroke-width="4" stroke-linejoin="round"/>
+                    </g>
+
+                    <g class="wind-lines" fill="none" stroke="#f5fff1" stroke-linecap="round">
+                      <path d="M304 272h77m-123 21h106m-72 25h64" stroke-width="4" opacity=".65"/>
+                      <path d="M863 249h72m-42 23h90" stroke-width="3" opacity=".55"/>
+                    </g>
+                    <g class="sparkles" fill="#fff5cf" aria-hidden="true">
+                      <path d="M880 285q0 15 14 15-14 1-14 16-1-15-15-16 14 0 15-15Z"/>
+                      <path d="M367 383q0 10 10 10-10 1-10 11-1-10-11-11 10 0 11-10Z"/>
+                      <circle cx="990" cy="340" r="4"/><circle cx="451" cy="222" r="3"/>
+                    </g>
+                    <g class="drink-ripples" fill="none" stroke="#e9fff4" stroke-width="3"><ellipse cx="693" cy="402" rx="17" ry="5"/><ellipse cx="693" cy="402" rx="38" ry="10"/></g>
                   </g>
-
-                  <g class="drink-ripples" fill="none" stroke="#e0f0dc" stroke-linecap="round"><ellipse cx="381" cy="449" rx="12" ry="4" stroke-width="3"/><ellipse cx="381" cy="449" rx="30" ry="9" stroke-width="3"/><ellipse cx="381" cy="449" rx="52" ry="15" stroke-width="2"/></g>
-                  <g class="scene-sparkles" fill="#fff4d4" aria-hidden="true"><path d="M331 220q0 13 13 13-13 1-13 14-1-13-14-14 13 0 14-13Z"/><path d="M881 319q0 9 9 9-9 1-9 10-1-9-10-10 9 0 10-9Z"/><circle cx="292" cy="306" r="3"/><circle cx="756" cy="319" r="4"/></g>
                 </svg>
-                <div class="scene-stamp" aria-hidden="true"><span>RIVER</span><strong>06:40</strong></div>
+                <div class="scene-hud" aria-hidden="true">
+                  <span class="hud-chip"><i></i> 晴朗 <b>24°</b></span>
+                  <span class="scene-stamp"><small>COASTAL LOOP</small><strong>08<span>KM</span></strong><i>海岸 · 01</i></span>
+                </div>
+                <div class="shot-label" aria-live="polite"><span class="shot-index" id="shotIndex">01</span><span><small>镜头</small><strong id="shotTitle">海岸远景</strong></span><span class="shot-total">/ 05</span></div>
+                <div class="shot-progress" aria-hidden="true"><i id="shotProgress"></i></div>
               </div>
-              <figcaption class="scene-caption"><div><span class="caption-label">THE LITTLE PAUSE</span><strong id="sceneStatus" aria-live="polite">停下来，听一听水声。</strong></div><span class="caption-mood"><i aria-hidden="true"></i> 安静的清晨</span></figcaption>
+              <figcaption class="scene-caption">
+                <div class="caption-copy"><span class="caption-eyebrow">TAIGU · COASTAL LOG</span><strong id="rideStatus" aria-live="polite">轮声掠过海岸，下一程向蓝而行。</strong></div>
+                <div class="caption-weather"><span aria-hidden="true">✳</span><span>晴 · 海岸公路</span></div>
+              </figcaption>
             </figure>
-
-            <div class="scene-controls" id="scene-controls" aria-label="动画控制">
-              <button class="button button-primary" id="waterBreak" type="button"><span class="button-drop" aria-hidden="true">↓</span><span>看鹈鹕喝水</span><span class="button-arrow" aria-hidden="true">↗</span></button>
-              <button class="button button-secondary" id="toggleAnimation" type="button" aria-pressed="true"><span class="pause-icon" aria-hidden="true"><i></i><i></i></span><span id="toggleLabel">暂停动画</span></button>
+            <div class="ride-controls" id="ride-controls" aria-label="动画控制">
+              <button class="button button-primary" id="waterBreak" type="button"><span class="button-drop" aria-hidden="true">↓</span><span>停下喝口水</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+              <button class="button button-secondary" id="toggleRide" type="button" aria-pressed="true"><span class="pause-icon" aria-hidden="true"><i></i><i></i></span><span id="toggleLabel">暂停动画</span></button>
               <span class="control-hint"><kbd>SPACE</kbd> 暂停 / 继续</span>
             </div>
           </div>
         </section>
 
-        <section class="bottom-note" aria-label="关于鹈鹕">
-          <div class="note-heading"><span class="bottom-note-mark" aria-hidden="true">✳</span><strong>浅滩来客</strong></div>
-          <p>鹈鹕用宽大的喙舀起水，也把河湾的清晨一并收进这次短暂停留。</p>
-          <span class="note-end">WATCH THE WATER <i>·</i> TAKE YOUR TIME</span>
+        <section class="bottom-note" aria-label="醍醐的路线记录">
+          <div class="note-heading"><span class="bottom-note-mark" aria-hidden="true">✳</span><strong>沿岸观测 03</strong></div>
+          <p>浅滩、礁石与远处的岛。醍醐沿海岸线骑行，停下饮水，再迎着风继续前行。</p>
+          <span class="note-end">FOLLOW THE COAST <i>·</i> KEEP ROLLING</span>
         </section>
       </main>
-
-      <footer class="site-footer"><span>RIVERSIDE FIELD NOTES <b>NO. 02</b></span><span>愿每一次停留，都刚刚好。</span><span aria-hidden="true">✳</span></footer>
+      <footer class="site-footer"><span>PELAGIC JOURNAL <b>FIELD LOG 03</b></span><span>越过海湾，继续向蓝而行。</span><span aria-hidden="true">✳</span></footer>
     </div>
   </body>
 </html>
