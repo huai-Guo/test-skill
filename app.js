@@ -1,42 +1,46 @@
-const scene = document.querySelector("#rideScene");
-const pauseButton = document.querySelector("#toggleRide");
+const scene = document.querySelector("#pelicanScene");
+const pauseButton = document.querySelector("#toggleAnimation");
 const pauseLabel = document.querySelector("#toggleLabel");
 const pauseIcon = pauseButton.querySelector(".pause-icon");
 const waterButton = document.querySelector("#waterBreak");
-const status = document.querySelector("#rideStatus");
+const status = document.querySelector("#sceneStatus");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-let playing = true;
+let playing = !reducedMotion.matches;
 let drinking = false;
-let rideTimer;
+let drinkTimer;
+let sipTimer;
 
 function clearRideTimer() {
-  window.clearTimeout(rideTimer);
+  window.clearTimeout(drinkTimer);
 }
 
-function scheduleWaterBreak() {
+function scheduleDrink() {
   clearRideTimer();
   if (!playing || reducedMotion.matches) return;
-  rideTimer = window.setTimeout(() => startWaterBreak(false), 7200);
+  drinkTimer = window.setTimeout(() => startDrink(false), 6400);
 }
 
-function startWaterBreak(manual) {
+function startDrink(manual) {
   if (drinking) return;
   clearRideTimer();
   drinking = true;
   scene.classList.add("is-drinking");
   waterButton.disabled = true;
-  status.textContent = manual ? "咕咚一口，继续慢慢骑。" : "停一下，喝口水再出发。";
-
-  window.setTimeout(finishWaterBreak, 1850);
+  status.textContent = reducedMotion.matches
+    ? "这只鹈鹕停下来，喝了口水。"
+    : manual ? "低头啄起一口清水。" : "俯身尝一口清晨的河水。";
+  sipTimer = window.setTimeout(finishDrink, reducedMotion.matches ? 1200 : 1900);
 }
 
-function finishWaterBreak() {
+function finishDrink() {
   drinking = false;
   scene.classList.remove("is-drinking");
   waterButton.disabled = false;
-  status.textContent = playing ? "骑一会儿，记得喝口水。" : "歇一会儿也很好。";
-  scheduleWaterBreak();
+  status.textContent = reducedMotion.matches
+    ? "已减少动态效果，手动饮水仍可使用。"
+    : playing ? "停下来，听一听水声。" : "在水边歇一会儿。";
+  scheduleDrink();
 }
 
 function setPlaying(nextPlaying) {
@@ -48,13 +52,15 @@ function setPlaying(nextPlaying) {
   pauseIcon.classList.toggle("is-play", !playing);
 
   if (!drinking) {
-    status.textContent = playing ? "骑一会儿，记得喝口水。" : "歇一会儿也很好。";
-    scheduleWaterBreak();
+    status.textContent = playing
+      ? reducedMotion.matches ? "已减少动态效果，手动饮水仍可使用。" : "停下来，听一听水声。"
+      : "在水边歇一会儿。";
+    scheduleDrink();
   }
 }
 
 pauseButton.addEventListener("click", () => setPlaying(!playing));
-waterButton.addEventListener("click", () => startWaterBreak(true));
+waterButton.addEventListener("click", () => startDrink(true));
 
 window.addEventListener("keydown", (event) => {
   if (event.code !== "Space" || event.repeat) return;
@@ -67,11 +73,17 @@ window.addEventListener("keydown", (event) => {
 reducedMotion.addEventListener("change", () => {
   if (reducedMotion.matches) {
     clearRideTimer();
-    status.textContent = "已为你减少动态效果，喝水按钮仍然可以使用。";
+    if (drinking) {
+      window.clearTimeout(sipTimer);
+      drinking = false;
+      scene.classList.remove("is-drinking");
+      waterButton.disabled = false;
+    }
+    setPlaying(false);
+    status.textContent = "已减少动态效果，手动饮水仍可使用。";
   } else {
-    scheduleWaterBreak();
-    status.textContent = playing ? "骑一会儿，记得喝口水。" : "歇一会儿也很好。";
+    setPlaying(true);
   }
 });
 
-scheduleWaterBreak();
+setPlaying(playing);
