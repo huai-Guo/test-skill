@@ -1,0 +1,51 @@
+schema_version: 1
+
+benchmark:
+  name: swe-bench-pro
+  version: v2
+  upstream_commit: "66f92766bba642462d4bbe5479e83f91f9211862"
+  subset: hard-51   # hard-51 | full-642
+
+experiment:
+  paired: true
+  trials_per_task: 3
+
+controls:
+  model: "<model-and-version>"
+  harness: "<agent-harness-and-version>"
+  reasoning_effort: "<fixed-value>"
+  max_turns: "<fixed-value>"
+  wall_time_minutes: 50
+  network_policy: "official-v2-locked"
+  tools: "<fixed-tool-set>"
+
+conditions:
+  baseline:
+    name: no-skill
+    skill_enabled: false
+  treatment:
+    name: skill
+    skill_enabled: true
+    skill_name: "<skill-name>"
+    skill_version: "<git-sha-or-version>"
+
+grading:
+  primary: "swe-bench-pro-v2-resolved"
+  authoritative_regrade: true
+  fresh_sandbox: true
+
+capture:
+  patch: true
+  trace: true
+  tokens: true
+  tool_calls: true
+  turns: true
+  wall_time: true
+  retries: true
+
+report:
+  task_level_results: true
+  paired_delta: true
+  regressions: true
+  cost_delta: true
+  latency_delta: true
