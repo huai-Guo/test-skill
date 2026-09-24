@@ -20,5 +20,5 @@
 - [ ] 3.2 Recheck complete manual/automatic water action, pause/resume, Space, keyboard focus and aria-live feedback.
 - [x] 3.3 Check 360 px viewport for horizontal overflow and reachable controls.
 - [x] 3.4 Check reduced-motion presentation, browser console and remote network requests.
-- [ ] 3.5 Review the revised acceptance criteria against the final page and inspect the complete diff.
-- [ ] 3.6 Commit and push the correction to the existing open PR; comply with Constitution by leaving it unmerged.
+- [x] 3.5 Review the revised visual acceptance criteria against the rendered page and inspect the complete diff.
+- [x] 3.6 Commit and push the correction to the existing open PR; comply with Constitution by leaving it unmerged.
