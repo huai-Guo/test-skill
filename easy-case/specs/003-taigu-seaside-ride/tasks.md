@@ -21,4 +21,4 @@
 - [x] 3.3 Check 360 px viewport for horizontal overflow and reachable controls.
 - [x] 3.4 Check reduced-motion presentation, browser console and remote network requests.
 - [x] 3.5 Review acceptance criteria against final page and inspect complete diff.
-- [ ] 3.6 Commit and push feature branch; comply with Constitution by leaving it unmerged.
+- [x] 3.6 Commit and push feature branch; comply with Constitution by leaving it unmerged.
